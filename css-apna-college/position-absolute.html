@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absolute Position Example</title>
+<style>
+  .container {
+    position: relative; /* यह सबसे नज़दीकी positioned ancestor है */
+    width: 300px;
+    height: 200px;
+    background-color: #e0e0e0;
+    margin: 50px auto;
+  }
+
+  .box {
+    position: absolute; /* container के अंदर positioned */
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">I am Absolute</div>
+</div>
+
+</body>
+</html>

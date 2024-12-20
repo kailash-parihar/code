@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Functions</title>
+  </head>
+  <!-- Document Object Model -->
+
+  <body>
+    <div id="main_div">Hello EveryOne...!!!!</div>
+    <div id="div_2">To Kaise hai Aap Log......</div>
+  </body>
+  <script type="text/javascript">
+    var x = document.getElementById("div_2").textContent;
+    var y = "Ye hai New Text";
+    document.getElementById("div_2").innerHTML = x + y;
+    console.log(x,y);
+  </script>
+</html>

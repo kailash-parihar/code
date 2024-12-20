@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greet Function</title>
+</head>
+
+<body>
+    <label for="name">Name</label>&nbsp;&nbsp;&nbsp;
+    <!--User Input Box-->
+    <input type="text" name="name" id="name" />&nbsp;&nbsp;&nbsp;
+    <!--Call Greet Function-->
+    <button onclick="greet()"> Greet </button>
+    <br><br>
+    <div class="greet"></div>
+</body>
+<script>
+    function greet() {
+        var name = document.getElementById("name").value;
+        var hello = "Khamma Ghani Sa  " + name + " Ji";
+        document.getElementsByClassName("greet")[0].innerHTML = hello;
+        alert(hello);
+    }
+</script>
+
+</html>

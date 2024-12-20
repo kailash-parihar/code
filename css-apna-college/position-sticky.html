@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Position Example</title>
+<style>
+  .container {
+    height: 2000px; /* लंबा container, ताकि scroll हो सके */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .header {
+    height: 50px;
+    background-color: #ffcc00;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    position: sticky;
+    top: 0; /* जब scroll top = 0 पर पहुँचता है तो sticky हो जाएगा */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    I am a Sticky Header!
+  </div>
+  <p>यह एक लंबा content है, ताकि आप scroll करके sticky effect देख सकें। नीचे scroll करते समय, ऊपर का yellow header bar एक certain point पर stick हो जाएगा।</p>
+  <p>Content...</p>
+  <p>More content...</p>
+  <p>Even more content...</p>
+  <!-- और भी content... -->
+</div>
+
+</body>
+</html>

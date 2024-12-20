@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple Calculator For Two Numbers</h1>
+    <input type="number" name="one" id="one" step="any" /><br>
+    <select name="optr" id="optr" />
+    <option value="+">+ </option>
+    <option value="-">- </option>
+    <option value="*">* </option>
+    <option value="/">/ </option>
+    <option value="%">% </option>
+    </select><br>
+    <input type="number" name="two" id="two" step="any" /><br>
+    <button id="calc" onclick="calc()">Calculate</button>
+    <br><br><button>Result</button><br>
+    <input type="text" name="" id="result" readonly />
+</body>
+<script>
+    function calc() {
+        var One = document.getElementById('one').value;
+        var Two = document.getElementById('two').value;
+        var optr = document.getElementById('optr').value;
+        if (optr == '+') {
+            var result = parseInt(One) + parseInt(Two);
+        }
+        if (optr == '-') {
+            var result = parseInt(One) - parseInt(Two);
+        }
+        if (optr == '*') {
+            var result = parseInt(One) * parseInt(Two);
+        }
+        if (optr == '/') {
+            var result = parseInt(One) / parseInt(Two);
+        }
+        if (optr == '%') {
+            var result = parseInt(One) % parseInt(Two);
+        }
+        document.getElementById('result').value = result;
+    }
+
+
+</script>
+
+</html>

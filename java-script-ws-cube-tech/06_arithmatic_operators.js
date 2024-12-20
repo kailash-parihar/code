@@ -1,0 +1,15 @@
+var x = 500;
+var y = 25;
+var a = x + y;
+var s = x - y;
+var m = x * y;
+var d = x / y;
+var r = x % y;
+++x; --y;
+console.log(a);
+console.log(s);
+console.log(m);
+console.log(d);
+console.log(r);
+console.log(x);
+console.log(y);
